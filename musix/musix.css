@@ -1,0 +1,56 @@
+body{
+    background-image:url(dj.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+ul,li,h2{
+    display: inline;
+    color: white;
+    padding: 20px;
+}
+.sub{
+    display: inline;
+    color: white;
+    padding: 20px;
+    float: right;
+    font-family: serif;
+    button{
+        background-color: red;
+        padding: 7px 28px;
+        font-size: 16px;
+    }
+}
+.sub1{
+    color: white;
+    margin-top: 200px;
+    margin-left: 60px;
+    font-size: 30px;
+    font-family:serif;
+    button{
+        padding: 9px 30px;
+        font-size: 20px;
+        
+    }
+    h1{
+
+        display: inline;
+    }
+
+}
+.sub2{
+    margin-top: 160px;
+    margin-left: 100px;
+    
+}
+.button{
+    padding: 7px 30px;
+    font-size:20px ;
+    background-color: black;
+    color: white;
+    border: solid 3px white;
+}
+p{
+    font-size: 20px;
+}
+
