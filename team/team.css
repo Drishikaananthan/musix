@@ -1,0 +1,14 @@
+.main{
+    text-align: center;
+    margin-top: 8%;
+
+}
+.sub{
+    display: flex;
+    justify-content: space-around;
+    width: 1000px;
+    margin-left: 16%;
+}
+h4,p{
+    color: gray;
+}
