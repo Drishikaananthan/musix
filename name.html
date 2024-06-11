@@ -1,30 +1,34 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <style>
-            /* h1
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* h1
             {
             font-size:20px;
 
             color:hsla(231 18% 50% 1.2%) ;
 
             } */
-            
-/* p{
+
+        /* p{
     border: solid 5px red;
     /* margin-top: 400px;
     margin-left: 100px;
     margin-right: 200px;
     margin-bottom: 800px; */
-    /* margin: 600px 300px 300px 600px;
+        /* margin: 600px 300px 300px 600px;
     padding:70px;
     height: 200px;
     width: 300px;
     outline: solid 10px rgb(25, 0, 255);
     outline-offset: 5px;
     
-} */ 
-.para{
+} */
+        /* .para{
     background-color: bisque;
     color:red ;
     text-decoration-style:solid;
@@ -36,17 +40,122 @@
     text-indent: 70px;
     letter-spacing: 4px;
     line-height: 4px;
-}
+    
+} */
+        h1 {
+            text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px red;
+
+        }
+
+        p {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        /* unvisitedlink  */
+
+
+        a:link {
+            font-size: 20px;
+        }
+
+
+        /* visitedlink */
+
+        a:visited {
+            color: red;
+        }
+
+        a:hover {
+            cursor: pointer;
+        }
+
+        a:active {
+            color: rgb(218, 220, 218);
+        }
+
+        ul {
+            list-style: none;
+            list-style-position: outside;
             
-        </style>
-        </head>
-    <body>
-        <!-- <h1>heading</h1> -->
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem excepturi non, necessitatibus sunt porro impedit accusantium eaque aliquid delectus quia atque debitis minima, odio ullam quisquam accusamus maxime repudiandae ad?</p>
+        }
+        table,th,td{
+            border:2px solid palevioletred;
+            
+        }
+        table{
+            width: 50%;
+            border-collapse: collapse;
+            height: 200px;
+        }
+        td{
+            height: 100px;
+            text-align: center;
+        }
+        tr:hover{
+            cursor: pointer;
+            color: blue;
+            background-color: rgb(207, 173, 173);
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <!-- <h1>heading</h1> -->
+    <!-- <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem excepturi non, necessitatibus sunt porro impedit accusantium eaque aliquid delectus quia atque debitis minima, odio ullam quisquam accusamus maxime repudiandae ad?</p>
         <p class="para">Lorem, ipsum dolor sit amet consectetur 
-        </p>
-    </body>
+        </p> -->
+    <h1>HEADING</h1>
 
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod soluta, explicabo molestias tempora, facilis quae
+        dolorum ipsam provident nisi facere nobis ducimus deleniti. Quod eius voluptatem numquam facere sint deserunt!
+    </p>
+    <i class="fa-solid fa-house"></i>
+    <a href="https://www.google.co.in/">click</a>
+    <ol>
+        <li>Apple</li>
+        <li>Orange</li>
+        <li>Grapes</li>
+        <li>Pineapplle</li>
+    </ol>
+    <ul>
+        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero minima delectus quod distinctio obcaecati
+            modi, optio voluptatibus, excepturi omnis laudantium et ad quisquam facilis laborum repellendus ut
+            repudiandae. Nam, sapiente!</li>
+        
+        <li>Grapes</li>
+        <li>Pineapplle</li>
+        
+    </ul>
+    <table>
+        <tr>
+            <th>head</th>
+            <th>head</th>
+            <th>head</th>
+            <th>head</th>
+        </tr>
+        <tr>
+            <td>hello</td>
+            <td>hello</td>
+            <td>hello</td>
+            <td>hello</td>
+        </tr>
+        <tr>
+            <td>hello</td>
+            <td>hello</td>
+            <td>hello</td>
+            <td>hello</td>
+        </tr>
+        <tr>
+            <td>hello</td>
+            <td>hello</td>
+            <td>hello</td>
+            <td>hello</td>
+        </tr>
 
+    </table>
+    
+</body>
 
 </html>

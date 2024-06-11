@@ -1,7 +1,8 @@
 .main{
     display: flex;
     justify-content: space-around;
-    margin-left: 20px;
+    margin-left: 300px;
+    
 
 }
 button{
@@ -19,6 +20,6 @@ p{
     font-size: 100%;
 }
 .image{
-    margin-right: 200px;
+    margin-right: 150px;
     margin-top: 50px;
 }
