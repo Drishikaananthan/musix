@@ -1,0 +1,49 @@
+
+ img{
+    border-radius: 45%;
+    margin-left: 40px;
+    margin-top: 40px;
+    position: relative;
+    
+ }
+ .main{
+    border: 5px solid;
+    
+    background-color: rgb(213, 190, 213);
+    
+    
+ }
+ ul{
+    
+    text-align: justify;
+ }
+ .image{
+   position: relative;
+            width: 400px;
+            height: 200px;
+ }
+ .img{
+   position: absolute;
+   top: 250px;
+   right: 0;
+   left: 300px;
+   width: 235px;
+   height: 100px;
+   
+ }
+ .para{
+    margin-left: 920px;
+ }
+ 
+ .sub,.sub1{
+    margin-left: 40px;
+    margin-right: 40px;
+   margin-top: 180px;
+   text-align: justify;
+   line-height: 1.8;
+
+ }
+ 
+ h4{
+   text-align: right;
+ }
