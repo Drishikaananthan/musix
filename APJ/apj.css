@@ -21,12 +21,15 @@
    position: relative;
             width: 400px;
             height: 200px;
+            margin-left: 500px;
+            
+            
  }
  .img{
    position: absolute;
    top: 250px;
    right: 0;
-   left: 300px;
+   left: 500px;
    width: 235px;
    height: 100px;
    

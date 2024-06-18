@@ -1,0 +1,47 @@
+
+h1{
+    text-align: center;
+    background-color: black;
+    color: white;
+    width: 500px;
+    margin-left: 400px;
+    margin-top: 200px;
+}
+.two{
+    background-color: white;
+    padding: 40px;
+    margin-top: 200px;
+}
+h2{
+    text-align: center;
+    
+}
+p{
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 50px;
+    line-height: 1.8;
+}
+img{
+    left: 0;
+            top: 0;
+            position: absolute;
+            z-index: -1;
+            position: fixed;
+}
+.four{
+    background-color: black;
+    padding: 30px;
+    color: white;
+    margin-top: 200px;
+}
+.six{
+    background-color: black;
+    padding: 30px;
+    color: white;
+    margin-top: 200px;
+}
+.seven{
+    margin-bottom: 200px;
+    width: 300PX;
+}
