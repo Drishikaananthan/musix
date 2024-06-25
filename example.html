@@ -1,27 +1,437 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        /* body{
-            background-image: url(dj.jpg);
-            background-repeat: repeat;
-            background-size: cover;
-            background-position: center;
-        } */
-        h1{
-            /* border-style: solid;
-            border-width: 22px;
-            border-color: wheat; */
-            border: solid 10px red;
-            border-radius: 25px;
-            cursor:crosshair;
+        /* input[type=text],style
+            {
+                width:30% ;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border:  2px solid grey ;
+                border-radius: 4px;
+                background-color: rgb(210, 189, 163);
+            }
+            input[type=button]
+            {
+                width: 100%;
+                background-color: rgb(169, 111, 64);
+                padding:14px 20px ;
+                margin: 8px ;
+                border: none;
+                border-radius: 4px;
+            }
+            .form{
+                padding: 20px;
+                border-radius: 5px;
+                background-color: aquamarine;
+            }
+            input[type=text]:focus{
+               border: 3px solid black;
+            } */
+        /* input[type=text]{
+                border:  2px solid gray ;
+                width: 130px;
+                border-radius: 4px;
+                font-size: 16px;
+                background-color: white;
+                background-image: url(download.png);
+                
+                background-repeat: no-repeat;
+                background-position: 10px 10px;
+                padding: 12px 20px 12px 40px;
+                background-size: 20px;
+                transition: width 0.1s ease-in-out;
+                
+
+       
+            }
+            input[type=text]:focus{
+                width: 100%;
+
+            } */
+        /* search */
+        textarea {
+            width: 100%;
+            height: 150px;
+            padding: 12px 20px;
+            border: 2px solid red;
+            border-radius: 5px;
+            background-color: rgb(224, 185, 185);
+            font-size: 19px;
+            resize: none;
         }
+
+
+
+        /* imagegallery */
+        /* 
+        .gallery{
+            border: 3px solid blue;
+            margin: 5px;
+            float: left;
+            width: 180px;
+
+        }
+        .gallery:hover{
+            border: 1px solid red;
+        }
+        img{
+            height: auto;
+            width: 100%;
+        }
+        p{
+            padding: 15px;
+            text-align: justify;
+        }
+        .main{position: relative;
+            display: inline-block;
+
+
+        } */
+
+
+        .sub {
+            display: none;
+            position: absolute;
+            background-color: aqua;
+            width: 160px;
+            padding: 12px 16px;
+            z-index: 2px;
+        }
+
+        .main:hover .sub {
+            display: block;
+
+        }
+
+        .button {
+            background-color: aquamarine;
+            color: brown;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .main1 {
+            position: relative;
+            display: inline-block;
+
+        }
+
+        .sub1 {
+            display: none;
+            position: absolute;
+            background-color: aliceblue;
+            width: 160px;
+            z-index: 1px;
+        }
+
+        a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+
+        }
+
+        .main1:hover .sub1 {
+            display: block;
+
+        }
+        h1::after{
+            content: url(download.png);
+        }
+
+
+       
+
+        /* dropdown */
+
+        /* .image{
+            display: none;
+            position: absolute;
+            background-color: aliceblue;
+            width:160px ;
+            z-index:1px ;
+        }
+        img{
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+    
+        }
+        .image:hover .image1{
+            display: block;
+
+        } */
+
+
+
+
+        /* img {
+            opacity: 0.5;
+        }
+
+        p::first-letter {
+            color: rgb(222, 17, 17);
+
+        } */
+
+
+
+         /* decentantselector */
+
+         /* ::selection{
+            color:red;
+        }
+        div ~ p{
+            background-color: yellow;
+        } */
+
+
+        /* gradient */
+/* div{
+    height: 200px;
+    background-color: red;
+    background-image: linear-gradient(to right, violet,indigo,blue,green,yellow,orange,red);
+
+} */
+/* div{
+    height: 100px;
+    width: 100px;
+    background-color: bisque;
+    transition: width 2s,height 2s,transform 2s;
+    /* transition-timing-function: ease-in-out; */
+    /* transition-delay: 1s; */
+    
+
+    
+/* }
+div:hover{
+    width:300px;
+    height:300px; 
+    transform:rotate(180deg);
+
+} */ 
+/* animation{ */
+/* div{
+    width: 200px;
+    height: 100px;
+    background-color: rgb(249, 5, 5);
+    animation-name:example;
+    animation-duration:4s;
+    text-align: center;
+    font-size: 80px;
+    position: absolute;
+    animation-delay:2s;
+    animation-iteration-count:2; 
+    animation-direction: alternate-reverse;
+    
+
+}
+@keyframes example{
+    
+       0%{background-color: red; left: 0px; top: 0px;}
+       25%{background-color: yellow;left: 200px; top: 0px;}
+       50%{background-color:greenyellow;left: 200px; top: 200px;}
+       75%{background-color:greenyellow;left: 0px; top: 200px;}
+       100%{background-color:magenta;left: 0px; top: 0px;}
+    
+
+        
+    
+} */
+
+
     </style>
 </head>
+
 <body>
-    <h1>hello</h1>
+
+    <!-- search -->
+
+    <!-- <div class="form">
+        <form>
+           <label for="fname">First name</label>
+           <input type="text"><br><br>
+           <label for="lname">Last name</label>
+           <input type="text"><br><br>
+           <label for="mob">Mobile No:</label>
+           <input type="text"><br><br>
+           <label for="con">Country</label>
+           <select>
+               <option>India</option>
+               <option>America</option>
+               <option>Pakisthan</option>
+               <option>UK</option>
+               <option>Afganisthan</option>
+               <option>Bengladesh</option>
+               
+           </select><br><br>
+           <button>Submit</button>
+   
+        </form>
+       </div> -->
+
+    <!-- <div class="form1">
+        <form> -->
+
+            <!-- <input type="text" name="search" placeholder="search"> -->
+            <!-- <textarea>
+                some text
+            </textarea>
+
+
+        </form>
+    </div> -->
+
+
+    <!-- imagegallery -->
+
+    <!-- <div class="gallery">
+        <img src="pexels-nicole-avagliano-1132392-2236713.jpg" alt="" width="500px" height="200px">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores accusantium beatae ratione hic voluptatum!
+            Labore saepe molestias sapiente eligendi, facere sint corrupti recusandae sequi. </p>
+    </div>
+    <div class="gallery">
+        <img src="pexels-nicole-avagliano-1132392-2236713.jpg" alt="" width="500px" height="200px">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores accusantium beatae ratione hic voluptatum!
+            Labore saepe molestias sapiente eligendi, facere sint corrupti recusandae sequi.</p>
+    </div>
+    <div class="gallery">
+        <img src="pexels-nicole-avagliano-1132392-2236713.jpg" alt="" width="500px" height="200px">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores accusantium beatae ratione hic voluptatum!
+            Labore saepe molestias sapiente eligendi, facere sint corrupti recusandae sequi.</p>
+    </div>
+    <div class="gallery">
+        <img src="pexels-nicole-avagliano-1132392-2236713.jpg" alt="" width="500px" height="200px">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores accusantium beatae ratione hic voluptatum!
+            Labore saepe molestias sapiente eligendi, facere sint corrupti recusandae sequi.</p>
+    </div> -->
+    <!-- dropdowns -->
+
+
+
+    <!-- <div class="main">
+        <img src="pexels-nicole-avagliano-1132392-2236713.jpg" alt="">
+        
+
+  
+    <div class="sub">
+        <img src="pexels-nicole-avagliano-1132392-2236713.jpg" alt="">
+        
+
+    </div>
+</div> -->
+
+
+
+    <!-- <div class="main1">
+    <button class="button">submit</button>
+    <div class="sub1">
+        <a href="#">click</a>
+        <a href="#">click</a>
+        <a href="#">click</a>
+    </div> 
+</div> -->
+
+    <!-- <div class="main1">
+    <img src="pexels-nicole-avagliano-1132392-2236713.jpg" alt="" width="50px" height="50px">
+    <div class="sub1">
+        <img src="pexels-nicole-avagliano-1132392-2236713.jpg" alt="" width="50px" height="50px">
+        <img src="pexels-nicole-avagliano-1132392-2236713.jpg" alt="" width="50px" height="50px"> 
+        <img src="pexels-nicole-avagliano-1132392-2236713.jpg" alt="" width="50px" height="50px">
+        > 
+         
+      </div> 
+</div> -->
+    <!-- <img src="pexels-nicole-avagliano-1132392-2236713.jpg" alt="" width="400px" height="400px"> -->
+
+
+    <!-- psudoelements -->
+
+
+    <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores perferendis cum tempore quasi reprehenderit
+        quis vitae enim dolores aliquam quibusdam. Ad vero placeat totam debitis. Minima debitis officiis eum, veritatis
+        obcaecati labore amet, laboriosam cum adipisci enim dignissimos qui voluptas, at consequuntur? Suscipit
+        blanditiis voluptatum earum tempora? Assumenda maiores facere quidem, corrupti, illum provident veniam minima
+        blanditiis accusamus eos, quibusdam perspiciatis nulla quod ut praesentium! Voluptas ad neque nihil quae.
+        Suscipit enim explicabo nihil pariatur magni. Provident cumque dolores, error exercitationem necessitatibus quia
+        nulla ex facere voluptates illum? Esse error consectetur quaerat sequi. Ad nulla, pariatur nemo dicta ratione
+        illo quas fuga iste, dolore reprehenderit dignissimos in? Excepturi illo nisi nostrum odit laboriosam libero,
+        enim, fugiat perspiciatis natus magnam necessitatibus delectus cumque, sapiente error voluptatum! Quaerat,
+        minus, omnis excepturi tempora expedita at necessitatibus ab natus labore eius suscipit nobis! Quod
+        reprehenderit dicta et possimus nostrum modi impedit aliquam facilis a.</p> -->
+        
+        
+        
+        <!-- <h1>hello world</h1>
+
+        <ul>
+            <li>apple</li>
+            <li>orange</li><
+            <li>grape</li>
+            <li>royal gala </li>
+            <li>apple fuji</li>
+        </ul> -->
+
+
+
+        <!-- decentantselector -->
+
+        <!-- <div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero possimus quasi quisquam numquam doloremque itaque!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nobis accusamus dolor eveniet doloribus autem.</p>
+            <section>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam impedit eveniet odio autem est praesentium!</p>
+            </section>
+            
+        </div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non id voluptates adipisci tempore cupiditate pariatur?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error rerum cumque officiis. In, voluptatem eius?</p>
+    -->
+   
+     <!-- gradient -->
+
+
+   <!-- <div>
+      
+   </div> -->
+   <!-- <div>
+
+   </div> -->
+
+
+
+
+   <!-- animation -->
+
+
+   <!-- <div>
+    disco
+   </div> -->
+
+   <!-- mediaquery -->
+   <div></div>
+
+
+   
+
+
+
+
+
+
 </body>
+
 </html>
